@@ -8,8 +8,6 @@
 </head>
 <body>
 
-<script></script>
-<input type="text" name="" id="">
-<input type="email" name="" id="">
+<?php include "lambda.php"; ?>
 </body>
 </html>
