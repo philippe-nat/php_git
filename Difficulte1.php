@@ -1,6 +1,6 @@
 <?php
 
-public Enum Difficulte {
+enum Difficulte1:int {
     case FACILE = 1;
     case MOYEN = 2;
     case DIFFICILE = 3;

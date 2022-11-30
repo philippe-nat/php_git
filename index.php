@@ -8,6 +8,10 @@
 </head>
 <body>
 
-<?php include "lambda.php"; ?>
+<?php 
+    //include "lambda.php";
+    include "diff.php"; 
+    // include 'match.php';
+?>
 </body>
 </html>
