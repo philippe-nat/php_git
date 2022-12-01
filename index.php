@@ -9,6 +9,8 @@
 <body>
 
 <?php 
+    include "Noyau.php";
+
     //include "lambda.php";
     include "diff.php"; 
     // include 'match.php';
