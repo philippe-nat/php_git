@@ -11,9 +11,14 @@
 <?php 
     include "Noyau.php";
 
-    //include "lambda.php";
-    include "diff.php"; 
+    // include "diff.php"; 
     // include 'match.php';
-?>
+    //include "lambda.php";
+
+    //include 'Syracuse.php';
+    //include 'AppelSyracuse.php';
+    include 'Syracuse2.php';
+    include 'AppelSyracuse2.php';
+    ?>
 </body>
 </html>
