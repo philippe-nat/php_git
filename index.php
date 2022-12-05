@@ -15,10 +15,12 @@
     // include 'match.php';
     //include "lambda.php";
 
-    //include 'Syracuse.php';
-    //include 'AppelSyracuse.php';
-    include 'Syracuse2.php';
-    include 'AppelSyracuse2.php';
+    // include 'Syracuse0.php';
+    // include 'AppelSyracuse0.php';
+    // include 'Syracuse1.php';
+    // include 'AppelSyracuse1.php';
+    include 'Syracuse.php';
+    include 'AppelSyracuse.php';
     ?>
 </body>
 </html>

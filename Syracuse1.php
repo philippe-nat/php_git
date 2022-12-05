@@ -1,5 +1,5 @@
 <?php
-class Syracuse2 {
+class Syracuse1 {
     readonly int $n;
     private ?array $tableau;
     readonly int $limite;
@@ -10,10 +10,10 @@ class Syracuse2 {
         $this->fillTableau();
     }
 
-    function __construct(int $n, int $limite, Closure $regle) {
+    function __construct(int $n, int $limite = 1_000_000, ?Closure $regle = null) {
         $this->n = $n;
         $this->limite = $limite;
-        $this->regle = $regle;
+        $this->regle = $regle ??  (fn($n) => $n & 1 == 1 ? (3 * $n + 1) >> 1 : $n >> 1);
         $this->fillTableau();
    }
 
@@ -21,11 +21,13 @@ class Syracuse2 {
         $this->tableau[0] = $this->n;
         for ($i = 1; $i < $this->limite; $i++) {
             $this->tableau[$i] = ($this->regle)($this->tableau[$i-1]);
+            if ($this->tableau[$i] == 1) break;
         }
     }
 
     public function afficheTableau() {
-        foreach($this->tableau as $elt) Noyau::echoln($elt);
+        //foreach($this->tableau as $elt) Noyau::echoln($elt);
+        Noyau::echoArrayLn($this->tableau);
     }
 }
 
