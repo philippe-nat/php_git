@@ -26,8 +26,19 @@ class Syracuse {
     }
 
     public function afficheTableau() {
-        //foreach($this->tableau as $elt) Noyau::echoln($elt);
         Noyau::echoArrayLn($this->tableau);
+    }
+
+    public function getLongueurVol():int {
+        return count($this->tableau);
+    }
+
+    public static function getNFromLongueurVol(int $n):?int {
+        for ($i = 3; $i < 100_000; $i++) {
+            $s = new Syracuse($i);
+            if ($s->getLongueurVol() >= $n) return $i;
+        }
+        return null;
     }
 }
 

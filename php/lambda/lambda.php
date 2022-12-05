@@ -1,5 +1,5 @@
 <?php
-
+include_once ('../global/Noyau.php');
 $liste = ['Jean', 'Arnaud','Gérard', 'Zoé', 'Thérèse'];
 sort($liste);
 foreach($liste as $elt) echo $elt . ' '; // Arnaud Gérard Jean Thérèse Zoé

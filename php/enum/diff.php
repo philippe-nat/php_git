@@ -1,4 +1,5 @@
 <?php
+include_once('../global/Noyau.php');
 include "Difficulte.php";
 
 $d = Difficulte::toDiff('facile');
