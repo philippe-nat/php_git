@@ -76,3 +76,13 @@ section a:hover {
     transition:0.5s;
     opacity: 0.5;
 }
+
+::placeholder {
+    text-transform: capitalize;
+}
+.error {
+    color:red;
+}
+.success {
+    color:green;
+}
